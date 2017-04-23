@@ -11,4 +11,5 @@ import java.util.List;
  */
 public interface MarkRepository extends JpaRepository<Mark,Long>{
     List<Mark> findAllByNameIgnoreCaseContaining(String name);
+    Mark findByName(String name);
 }

@@ -1,0 +1,34 @@
+#table{
+    height: 300px;
+    overflow: scroll;
+}
+
+#error{
+    color: red;
+}
+
+
+
+.c_main {
+    padding: 0;
+    height: auto;
+    /*margin-top: 200px;*/
+}
+
+form {
+    margin: 0 auto;
+    margin: 100px 0 100px 0;
+    padding: 30px;
+    background-color: #eee;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-footer {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}

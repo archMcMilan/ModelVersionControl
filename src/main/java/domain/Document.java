@@ -3,13 +3,18 @@ package domain;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "document")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Document {
 
     @Id
@@ -47,7 +52,6 @@ public class Document {
     @Column(nullable = false)
     private String initDate;
 
-    @Column(nullable = false)
     private String lastChangeDate;
 
     @ManyToOne(cascade = CascadeType.ALL)

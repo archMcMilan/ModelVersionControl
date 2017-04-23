@@ -22,7 +22,6 @@ public class Modification {
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
     private String permit;
 
     @Column(nullable = false)
@@ -31,4 +30,6 @@ public class Modification {
     @Column(nullable = false)
     private String changeDate;
 
+    @Enumerated(EnumType.STRING)
+    private ModificationStatus modificationStatus;
 }

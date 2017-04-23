@@ -11,4 +11,7 @@ import java.util.List;
  */
 public interface BuildingRepository extends JpaRepository<Building,Long> {
     List<Building> findAllByNameIgnoreCaseContaining(String name);
+    Building findByName(String name);
+//    @Query("FROM Document where project.id=?")
+//    List<Building> findAllByProjectId(Long projectId);
 }
